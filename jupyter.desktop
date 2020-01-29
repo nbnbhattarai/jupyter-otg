@@ -1,0 +1,11 @@
+[Desktop Entry]  
+Version=1.0
+Name=Jupyter Notebook
+GenericName=Jupyter Notebook
+Comment=Jupyter Notebook
+Exec=/usr/bin/jupyter_launcher.sh # can store in any directory
+Terminal=false
+Icon=jupyter.png                # change to actual fullpath of icon file
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;

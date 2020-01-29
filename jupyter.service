@@ -1,0 +1,15 @@
+[Unit]
+Description=Jupyter Notebook Service
+After=network.target
+
+[Service]
+Type=simple
+User=username
+WorkingDirectory=/
+Environment="DISPLAY=:0"
+Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/anaconda/bin"
+ExecStart=/opt/anaconda/bin/jupyter-notebook --no-browser --port 5000
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
